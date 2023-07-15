@@ -1,0 +1,139 @@
+:root {
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Verydarkdesaturatedblue50: hsla(229, 23%, 23%, 50%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+/* [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-color: var(--Darkcyan);
+    background-position: -700px -500px, 250px 250px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (min-width: 600px) {
+    body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-color: var(--Darkcyan);
+    background-position: -450px -450px, 600px 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+}
+
+
+.card {
+    max-width: 20rem;
+    max-height: 25rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 1rem;
+    margin: 5rem .5rem;
+    box-shadow: 0 0 1rem var(--Verydarkdesaturatedblue50);
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.top-card {
+    position: relative;
+    height: 9rem;
+    width: 20rem;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    background: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+img {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+    top: 100px;
+    border: 5px solid white;
+}
+
+.datos {
+    margin-top: 4rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.flex-group-datos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: .5rem;
+}
+
+h3 {
+    color: var(--Verydarkdesaturatedblue);
+}
+
+p {
+    color: var(--Darkgray);
+    font-size: 18px;
+}
+
+.london {
+    font-size: 15px;
+}
+
+.grid-bottom-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 1rem;
+    padding: 1.5rem 2rem;
+    border-top: 1px solid lightgrey;
+}
+
+.numbers {
+    text-align: center;
+}
+
+span {
+    font-weight: 700;
+    color: var(--Verydarkdesaturatedblue);
+}
+
+.text {
+    font-size: 12px;
+    padding: .5rem;
+    letter-spacing: 1px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { 
+    color: hsl(228, 62%, 19%); 
+    text-decoration: none;
+}
