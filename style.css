@@ -1,7 +1,7 @@
 :root {
     --Darkcyan: hsl(185, 75%, 39%);
     --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
-    --Verydarkdesaturatedblue50: hsla(229, 23%, 23%, 50%);
+    --Verydarkdesaturatedblue30: hsla(229, 23%, 23%, 30%);
     --Darkgrayishblue: hsl(227, 10%, 46%);
     --Darkgray: hsl(0, 0%, 59%);
 }
@@ -38,7 +38,7 @@ body {
     overflow: hidden;
     background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
     background-color: var(--Darkcyan);
-    background-position: -450px -450px, 600px 400px;
+    background-position: -300px -450px, 730px 400px;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -52,7 +52,7 @@ body {
     grid-template-rows: 1fr 2fr 1fr;
     gap: 1rem;
     margin: 5rem .5rem;
-    box-shadow: 0 0 1rem var(--Verydarkdesaturatedblue50);
+    box-shadow: 0 0 3rem .5rem var(--Verydarkdesaturatedblue30);
     border-radius: 1rem;
     background-color: white;
 }
@@ -118,7 +118,8 @@ p {
 }
 
 span {
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 1.2rem;
     color: var(--Verydarkdesaturatedblue);
 }
 
@@ -129,11 +130,10 @@ span {
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 14px; 
     text-align: center; 
-    color: white;
 }
 .attribution a { 
-    color: hsl(228, 62%, 19%); 
+    color: hsl(0, 0%, 100%); 
     text-decoration: none;
 }
